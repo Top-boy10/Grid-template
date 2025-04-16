@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS grid</title>
+    </head>
+
+
+
+<style>
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+    img{
+        border-radius: 25px;
+    }
+
+    .grid-container{
+        background-color: rgb(238, 229, 229);
+       display: grid;
+       grid-template-columns: 150px 150px 150px  150px;
+       grid-template-rows: 150px 150px 150px 150px;
+       gap: 20px;
+       padding: 20px;
+    }
+
+    .items{
+        border-radius: 25px;
+    }
+
+    .lion{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .monkey{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .snake{
+        grid-column: span 2;
+    }
+
+    #lions{
+        height: 320px;
+        width: 320px;
+    }
+
+    .monkey1{
+        height: 320px;
+    }
+
+    .snake1{
+        height: 150px;
+        width: 320px;
+    }
+     </style>   
+
+<Body>
+   <div class="grid-container">
+    <div class="items lion"><img id="lions" src="./image/lion.jpeg" alt=""></div>
+    <div class="items eagle"><img src="./image/eagle.jpeg" alt=""></div>
+    <div class=" items cheatah"><img src="./image/cheatah.jpeg" alt=""></div>
+    <div class="items tiger"><img src="./image/tiger.jpeg" alt=""></div>
+    <div class="items cat"><img src="./image/cat.jpeg" alt=""></div>
+    <div class="items wolf"><img src="./image/wolf.jpeg" alt=""></div>
+    <div class="items elephant"><img src="./image/elephant.jpeg" alt=""></div>
+    <div class="items monkey"><img class="monkey1" src="./image/monkey.jpeg" alt=""></div>
+    <div class="items snake"><img class="snake1" src="./image/snake.jpeg" alt=""></div>
+   </div>
+</Body>
+
+</Html>
